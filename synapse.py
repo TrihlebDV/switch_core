@@ -7,6 +7,7 @@ import threading
 import com_dict
 
 import socket
+import select
 
 class Synapse(QObject):
     def __init__(self, HOST = 'localhost', PORT = 8686,
